@@ -1,0 +1,32 @@
+.services{
+    min-height: 700px;
+    width: 100%;
+
+    .servicesCaption{
+        grid-column: 1/2;
+        padding-left: 80px;
+        
+        .service{
+            grid-template-columns: 10% 90%;
+            grid-template-rows: repeat(2, 30px);
+            
+            i{
+                color: var(--primary-color);
+                grid-row: 1 / span 2;
+            }
+            h4{
+                font-family: 'poppins';
+                width: fit-content;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: 'poppins';
+                color: #777777;
+            }
+        }
+    }
+
+    .servicesImg{
+        height: 325px;
+    }
+}

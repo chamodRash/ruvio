@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1185px) {
+    .packages{
+        .Container{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}	
+@media only screen and (max-width: 1035px) {
+    .packages{
+        .Container{
+            .card{
+                width: 220px;
+                .img{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}	
+@media only screen and (max-width: 992px) {
+    html{
+        font-size: 75%;
+    }
+    .services{
+        .servicesCaption{
+            padding-left: 30px;
+        }
+    }
+}	
+@media only screen and (max-width: 945px) {
+    body{
+        font-size: 12px;
+    }
+    .packages{
+        .Container{
+            .card{
+                width: 200px;
+                word-wrap: break-word;
+                h4{
+                    //width: 100px;
+                    text-align: center;
+                }
+                .img{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+}	

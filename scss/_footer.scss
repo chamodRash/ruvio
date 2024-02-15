@@ -1,0 +1,52 @@
+#footer{
+    width: 100%;
+    min-height: 330px;
+    background-image: url(../img/pw_maze_black_2X.png);
+    background-repeat: repeat;
+    .Container{
+        .services{
+            min-height: 300px;
+            width: 760px;
+            margin: 0 auto;
+            padding: 0 0 10px 0;
+            .card{
+                width: 210px;
+                height: 250px;
+                text-align: center;
+                background: transparent;
+                box-shadow: none;
+                color: var(--whitesmoke);
+                transition: all .4s ease-in-out;
+                .links{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #555555;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                color: var(--primary-color);
+                                font-size: 1.45rem;
+                            }
+                        }        
+                    }
+                }
+                &:hover{
+                    color: #222222;
+                    background-color: rgba($color: white, $alpha: .85);
+                    border: none;
+                    border-radius: 8px;
+                    padding: 20px;
+                    box-shadow: 2px 2px 7.5px rgba($color: #222222, $alpha: .2);
+                }
+            }
+        }
+        .flex{
+            justify-content: space-around;
+        }
+    }
+    .copyRight{
+        text-align: center;
+        color: var(--whitesmoke);
+        bottom: 15px;
+    }
+}

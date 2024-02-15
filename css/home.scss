@@ -1,0 +1,142 @@
+#home {
+    .navBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .logo {
+            width: 180px;
+            justify-content: space-between;
+            transition: scale .3s ease-in-out;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                outline: none;
+            }
+            img {
+                height: 47.5px;
+                width: auto;
+            }
+            .logoName{
+                font-size: 3.75rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                outline: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                align-self: center;
+                margin: 0;
+                background: var(--logo-linear-gradient);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        .navLinks{
+            padding: 0;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            i {
+                font-size: 22.5px;
+                border-radius: 50%;
+                padding: 5px 7px;
+                background-color: #777777;
+                color: var(--light-color);
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: #e0e0e0;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .welcomeArea {
+        height: 250px;
+        padding: 25px 0 0 0;
+        margin-top: 90px;
+        background-color: #000000;
+        .flex {
+            justify-content: space-around;
+        }
+        img {
+            width: 400px;
+        }
+        .topic {
+            font-size: 3.75rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: fit-content;
+            align-self: center;
+            text-align: right;
+            margin: 0;
+            color: white;
+            line-height: 1.45;
+            span {
+                background: var(--logo-linear-gradient);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+   
+    // ----------------- Services styles ----------------------------
+    .services {
+        .Container {
+            padding-top: 20px;
+            .card {
+                margin: 20px;
+                width: 225px;
+                cursor: pointer;
+                transition: all .25s ease-in-out;
+                //line-height: 2.5;
+                i {
+                    font-size: 5.5rem;
+                    padding: 25px 0;
+                    color: #555555;
+                    transition: color .25s ease-in-out;
+                }
+                h4 {
+                    transition: color .25s ease-in-out;
+                }
+                p {
+                    font-size: 1.35rem;
+                    color: #777777;
+                }
+                &:hover {
+                    transform: translateY(-2.5px);
+                    i, h4 {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        .flex {
+            flex-wrap: wrap;
+        }
+    }
+
+    // -------------------------------- Packages section styles ----------------------------
+    .packages{
+        padding: 50px;
+        .Container{
+            justify-content: space-around;
+            .card{
+                width: 240px;
+                transition: all 0.2s ease-in-out;
+                img {
+                    transition: scale .3s ease-in-out;
+                }
+                &:hover{
+                    scale: 1.015;
+                    img {
+                        scale: 1.125;
+                    }
+                }
+            }
+        }
+    }
+    
+}

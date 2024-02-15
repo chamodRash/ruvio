@@ -1,0 +1,21 @@
+// Homepage sass file
+@import "../scss/font";
+@import "../scss/variables";
+@import "../scss/globalVariables";
+@import "../scss/navBar";
+@import "../scss/slider";
+@import "../scss/services";
+@import "../scss/packages";
+@import "../scss/aboutUs";
+@import "../scss/contact";
+@import "../scss/footer";
+
+// Login page sass files
+@import "../scss/loginPage";
+
+//After login => Home php file styles
+// @import "../scss/home";
+
+
+// Responsive sass files
+@import "../scss/responsive";

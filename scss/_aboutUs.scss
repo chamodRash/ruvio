@@ -1,0 +1,20 @@
+.aboutUs{
+    background-size: cover;
+    color: var(--light-color);
+    padding: 50px 0;
+    p{
+        color: var(--whitesmoke);
+        span{
+            font-size: 2.25rem;
+        }
+    }
+    .Container{
+        font-family: 'Courier New', Courier, monospace;
+        .paragraph{
+            color: var(--whitesmoke);
+            text-indent: 100px;
+            text-align: justify;
+            width: 800px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.contact{
+    width: 100%;
+    padding: 20px 0 0 0;
+    .Container{
+        .contactDetails{
+            grid-column: 1/2;
+            width: 100%;
+            padding-left: 25px;
+            .contact-info-box{
+                //justify-content: space-between;
+                h4{
+                    font-size: 2rem;
+                    margin-top: 0;
+                    i{
+                        padding-right: 15px;
+                    }
+                }
+                span{
+                    color: #555555;
+                }
+            }
+            .grid{
+                grid-template-columns: 25% 75%;
+            }
+            .social-links{
+                padding-top: 50px;
+                width: 300px;
+                justify-content: center;
+                font-size: 22.5px;
+                .social-link{
+                    cursor: pointer;
+                    background: #555555;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 10px;
+                    transition: all .3s ease-in-out;
+                    a{
+                        text-decoration: none;
+                        color: var(--light-color);
+                    }
+                    &:hover{
+                        scale: 1.05;
+                    }
+                }
+                .twitter:hover{
+                    background: #1da1f2;
+                }
+                .facebook:hover{
+                    background: #1877f2;
+                }
+                .pinterest:hover{
+                    background: #bd081c;
+                }
+                .gplus:hover{
+                    background: #db4437;
+                }
+                .dribbble:hover{
+                    background: #ea4c89;
+                }
+            }
+        }
+
+        .contactForm{
+            width: 100%;
+            .input-text{
+                width: 100%;
+                height: 50px;
+                padding: 10px 0 10px 20px;
+                border: 1px solid #bebebe;
+                border-radius: 5px;
+                color: #5f5f5f;
+                &::placeholder{
+                    font-size: 1.5rem;
+                }
+            }
+            .input-text{
+                &:focus{
+                    border: none;
+                    outline: 1px solid var(--primary-color);
+                    box-shadow: 0px 0px 5px 0.15px var(--primary-color);
+                }
+            }
+            .text-area{
+                height: 150px;
+            }
+            .input-btn{
+                align-self: flex-start;
+                padding: 15px 30px;
+                background: var(--primary-color);
+                color: var(--light-color);
+                text-transform: uppercase;
+                font-size: 1.35rem;
+                border: 1px solid var(--primary-color);
+                border-radius: 5px;
+                &:hover{
+                    scale: 0.98;
+                    box-shadow: 0px 0px 5px 0px var(--primary-color);
+                }
+                
+            }
+            .contact-error{
+                position: relative;
+                color: rgb(206, 86, 86);
+                border: 1px solid red;
+                //background: rgb(255, 149, 149);
+                box-shadow: 0px 0px 2.5px 0px rgba($color: red, $alpha: .6);
+                &::after{
+                    content: "You have entered an invalid email address!";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 100%;
+                    left: 0;
+                }
+                &:focus{
+                    border: none;
+                    outline: 1px solid red;
+                    box-shadow: 0px 0px 4px 0px rgba($color: red, $alpha: .6);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.packages{
+    padding-bottom: 100px;
+    .Container{
+        justify-content: space-around;
+        .card{
+            width: 240px;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                scale: 1.015;
+                img {
+                    scale: 1.125;
+                }
+            }
+
+            h4{
+                font-size: 1.95rem;
+            }
+            img{
+                height: 100px;
+                margin: 40px 0;
+                transition: scale .3s ease-in-out;
+            }
+            ul{
+                color: #777777;
+            }
+            .btn{
+                border: 1px solid var(--primary-color);
+                color: var(--primary-color);
+                width: 150px;
+                &:hover{
+                    background-color: var(--primary-color);
+                    color: var(--light-color);
+                    border: none;
+                }
+            }
+        }
+        .premium{
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            ul{
+                color: var(--light-color);
+            }
+            .btn{
+                border: 1px solid var(--light-color);
+                color: var(--light-color);
+                width: 150px;
+                &:hover{
+                    background-color: var(--light-color);
+                    color: var(--primary-color);
+                    border: none;
+                }
+            }
+
+        }
+    }
+}

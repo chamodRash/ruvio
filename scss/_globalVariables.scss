@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #111111;
+    line-height: 1.6;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    //transition: scroll-behavior .75s ease-in-out;
+}
+ul{
+    list-style: none;
+}
+li{
+    font-family: 'poppins', sans-serif;
+    padding: 5px 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #111111;
+    margin: 10px 0;
+}
+a:focus{
+    outline: none;
+}
+h1, h2{
+    //font-family: 'poppins';
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+h3, h4, h5{
+    font-family: 'poppins';
+    font-weight: normal;
+    line-height: 1;
+    margin: 10px 0;
+}
+p{
+    font-family: 'poppins';
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+.underline{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+//Margin classes
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 3rem;
+}
+.m-5{
+    margin: 4rem;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+
+//padding classes
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-4{
+    padding: 3rem;
+}
+.p-5{
+    padding: 4rem;
+}
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+
+//Utility classes
+.Container{
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+// flex classes
+.flex{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+//grid classes
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+// Button classes
+.btn {
+    padding: 14px 40px;
+    //margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;    
+}
+.btn-outline{
+    color: var(--light-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    &:hover{
+        color: var(--light-color);
+        background-color: var(--primary-color);
+        border: none;
+    }        
+}
+.btn-fill{
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    &:hover{
+        scale: 1.05;
+    }        
+}
+
+
+.topic{
+    text-align: center;
+    padding-top: 20px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    h2{
+        font-size: 4rem;
+        font-weight: normal;
+        font-family: 'kanit';
+        text-transform: uppercase;
+    }
+    p{
+        font-family: 'poppins';
+        font-weight: normal;
+        font-size: 1.5rem;
+        color: #888888;
+    }
+
+}
+
+.card{
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 2px 7.5px rgba($color: #222222, $alpha: .2);
+}
+
+.display-block{
+    display: block;
+}
+
+.scrolltoupBtn {
+    transition: display .5s ease-in;
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 7.5px rgba($color: #222222, $alpha: .2);
+    cursor: pointer;
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+    h2{
+        font-size: 3.25rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+
+    .input-text{
+        width: 100%;
+        height: 50px;
+        padding: 10px 0 10px 20px;
+        border: 1px solid #bebebe;
+        border-radius: 5px;
+        color: #5f5f5f;
+        font-family: 'poppins', sans-serif;
+        &::placeholder{
+            font-size: 1.5rem;
+        }
+    }
+    .input-text{
+        &:focus{
+            border: none;
+            outline: 1px solid var(--primary-color);
+            box-shadow: 0px 0px 5px 0.15px var(--primary-color);
+        }
+    }
+    .text-area{
+        height: 150px;
+        font-family: 'poppins', sans-serif;
+    }
+    .btn{
+        align-self: flex-start;
+        padding: 15px 30px;
+        background: var(--primary-color);
+        color: var(--light-color);
+        text-transform: uppercase;
+        font-size: 1.35rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        transition: all .2s ease-in-out;
+        &:hover{
+            color: var(--light-color);
+            scale: 0.98;
+            box-shadow: 0px 0px 5px 0px var(--primary-color);
+        }
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            scale: .95;
+        }
+        
+    }
+}
+
+// .social-links{
+//     padding-top: 50px;
+//     width: 300px;
+//     justify-content: center;
+//     font-size: 22.5px;
+//     .social-link{
+//         cursor: pointer;
+//         background: #555555;
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         text-align: center;
+//         margin: 0 10px;
+//         transition: all .3s ease-in-out;
+//         a{
+//             text-decoration: none;
+//             color: var(--light-color);
+//         }
+//         &:hover{
+//             scale: 1.05;
+//         }
+//     }
+//     .twitter:hover{
+//         background: #1da1f2;
+//     }
+//     .facebook:hover{
+//         background: #1877f2;
+//     }
+//     .pinterest:hover{
+//         background: #bd081c;
+//     }
+//     .gplus:hover{
+//         background: #db4437;
+//     }
+//     .dribbble:hover{
+//         background: #ea4c89;
+//     }
+//     .google:hover{
+        
+//     }
+// }
